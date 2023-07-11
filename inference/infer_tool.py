@@ -141,7 +141,7 @@ class Svc(object):
             self.spk2id = self.hps_ms.spk
             self.unit_interpolate_mode = self.hps_ms.data.unit_interpolate_mode if self.hps_ms.data.unit_interpolate_mode is not None else 'left'
             self.vol_embedding = self.hps_ms.model.vol_embedding if self.hps_ms.model.vol_embedding is not None else False
-            self.speech_encoder = self.hps_ms.model.speech_encoder if self.hps_ms.model.speech_encoder is not None else 'vec768l12'
+            self.speech_encoder = self.hps_ms.model.speech_encoder if self.hps_ms.model.speech_encoder is not None else 'vec256l9'
  
         self.nsf_hifigan_enhance = nsf_hifigan_enhance
         if self.shallow_diffusion or self.only_diffusion:
